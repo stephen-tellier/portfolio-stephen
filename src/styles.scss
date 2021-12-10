@@ -14,11 +14,24 @@
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins";
 
-//$theme-color
+$cream: #F0EFEC;
+$cream-b: #E6E5E3;
+
+// Create your own map
+$custom-colors: (
+    "cream": $cream,
+    "cream-b": $cream-b,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$theme-colors-rgb: map-loop($theme-colors, to-rgb, "$value");
+$utilities-colors: map-merge($utilities-colors, $theme-colors-rgb);
+$utilities-text-colors: map-loop($utilities-colors, rgba-css-var, "$key", "text");
+$utilities-bg-colors: map-loop($utilities-colors, rgba-css-var, "$key", "bg");
+
 
 @import "~bootstrap/scss/utilities";
-
-//$utilities
 
 // Layout & components
 @import "~bootstrap/scss/root";
@@ -59,3 +72,13 @@
 // Utilities
 @import "~bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+
+body{font-family: 'Rubik', sans-serif;}
+
+.ff-anton{
+    font-family: 'Anton', sans-serif;
+}
