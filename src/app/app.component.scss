@@ -4,4 +4,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    &_content{
+        margin-top: 140px;
+    }
+}
+
+.white-separator{
+    background-color: #fff;
+    border-radius: 1000px;
+    height: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.illu-hobies1{
+    position: absolute;
+    top: 50px;
+    right: 50%;
+    z-index: -1;
+}
+
+.illu-hobies2{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    z-index: -1;
+}
+
+.section-title{
+    position: absolute;
+    top: -50px;
 }
