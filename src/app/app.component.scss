@@ -5,9 +5,6 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    &_content{
-        margin-top: 140px;
-    }
 }
 
 .white-separator{
@@ -35,4 +32,44 @@
 .section-title{
     position: absolute;
     top: -50px;
+}
+
+.illu-tasse{
+    width: 200px;
+    position: absolute;
+    top: calc(50% + 100px);
+    left: calc(50% + 500px);
+    z-index: 10;
+}
+
+.illu-plant{
+    width: 350px;
+    position: absolute;
+    top: calc(50% - 300px);
+    left: calc(50% + 300px);
+    z-index: 10;
+}
+
+.illu-ipad{
+    width: 800px;
+    position: absolute;
+    top: calc(50% - 800px);
+    left: calc(50% - 1000px);
+    z-index: 10;
+}
+
+.illu-crayon{
+    width: 150px;
+    position: absolute;
+    top: calc(50% - 90px);
+    left: calc(50% - 500px);
+    z-index: 10;
+}
+
+.illu-livre{
+    width: 450px;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 800px);
+    z-index: 10;
 }
