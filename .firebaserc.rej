@@ -1,0 +1,7 @@
+diff a/.firebaserc b/.firebaserc	(rejected hunks)
+@@ -0,0 +1,5 @@
++{
++  "projects": {
++    "default": "portfolio-stephen"
++  }
++}
