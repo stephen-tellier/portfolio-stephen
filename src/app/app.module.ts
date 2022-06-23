@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ParallaxDirective } from './parallax.directive';
 import { ParallaxV2Directive } from './parallax-v2.directive';
+import { CheersComponent } from './page/cheers/cheers.component';
+import { HomeComponent } from './page/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     ParallaxDirective,
-    ParallaxV2Directive
+    ParallaxV2Directive,
+    CheersComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
